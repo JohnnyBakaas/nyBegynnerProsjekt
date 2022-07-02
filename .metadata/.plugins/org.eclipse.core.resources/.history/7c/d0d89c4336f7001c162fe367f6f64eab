@@ -1,0 +1,25 @@
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class main {
+
+	public static void main(String[] args) {
+		kunde kunde1 = new kunde("Johnny", "120999", "001", 69420);
+		kunde kunde2 = new kunde("Sting", "Vet ikke", "002", 1000000);
+		
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Login: ");
+		
+		String imputSC = sc.next();
+		if (kunde1.getPersonnummer().equals(imputSC)) {
+			System.out.println("Hei Johnny");
+			System.out.println("Du har " + kunde1.getSaldo() + "kr på konto");
+			System.out.println("Vil du få mer penger?");
+			double i = kunde1.getSaldo() + sc.nextDouble();
+			kunde1.saldo = i;
+			
+		} else if (kunde2.getPersonnummer().equals(imputSC)) {
+			System.out.println("Hei Stig");
+		}
+	}
+}

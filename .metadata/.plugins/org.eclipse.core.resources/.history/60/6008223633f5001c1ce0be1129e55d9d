@@ -1,0 +1,30 @@
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class Main {
+	
+	public static void main(String[] args) {
+		int kontaktNr = 1;
+		int imputUser = 0;
+		Scanner sc = new Scanner(System.in);
+		while(true) {
+			System.out.println("1 legg til kontakt");
+			System.out.println("2 se på kontakter");
+			if(imputUser == 1) {
+				System.out.println("yay");
+			}
+			
+		}
+		
+		
+		//legg til my kontakt
+		
+		
+		System.out.println("legg til kontakt");
+		Kontakt johnny = new Kontakt("johnny", "bakaas", "90732947");
+		System.out.println(johnny.getTlf());
+		
+		
+		
+	}
+}

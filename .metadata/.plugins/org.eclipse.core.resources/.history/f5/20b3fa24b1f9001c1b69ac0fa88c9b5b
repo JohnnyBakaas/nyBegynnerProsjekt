@@ -1,0 +1,38 @@
+
+public class main {
+
+	public static void main(String[] args) {
+		
+		String[] liste = {"apelsin", "ape", "apekatt", "asp"};
+		System.out.println(liste[0].substring(0,1));
+		int lengdeAvKortesteOrd = liste[0].length();
+		for (int i=0; i < liste.length; i++) {
+			if (lengdeAvKortesteOrd > liste[i].length()) {
+				lengdeAvKortesteOrd = liste[i].length();
+			} 
+		}
+		System.out.println(lengdeAvKortesteOrd);
+		
+		int lengdeFelles = 0;
+		boolean giFaen = true;
+		
+		
+		for (int i=0; i < lengdeAvKortesteOrd; i++) {
+			if (giFaen) {
+					for (int j=0; j < liste.length; j++) {
+					if (liste[j].charAt(i) == liste[0].charAt(i)) {
+						lengdeFelles += 1;
+					} else {
+						giFaen = false;
+						break;
+					}
+				}
+			}
+		}
+		
+		System.out.println(lengdeFelles);
+		int endeligFelles = lengdeFelles / liste.length;
+		System.out.println(endeligFelles);
+		System.out.println(liste[0].substring(0, endeligFelles));
+	}
+}

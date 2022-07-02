@@ -1,0 +1,10 @@
+import java.util.ArrayList;
+
+public class main {
+
+	public static void main(String[] args) {
+		kunde kunde1 = new kunde("johnny", "bakaas", "234", 69);
+		kunde kunde2 = new kunde("Sting", "Husker ikke", "vetikke", 1000000);
+		System.out.println(kunde1.getNavn());
+	}
+}

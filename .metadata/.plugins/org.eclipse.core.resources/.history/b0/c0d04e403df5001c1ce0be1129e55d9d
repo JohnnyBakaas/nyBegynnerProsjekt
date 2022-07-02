@@ -1,0 +1,71 @@
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+public class Main {
+	
+	public static void main(String[] args) {
+		String kontaktNr = "1";
+		String imputUser = "0";
+		
+		// list for ny kontakt 
+		List<String> imputKontaktListe = new ArrayList<>();
+		
+		Scanner sc = new Scanner(System.in);
+		while(true) {
+			System.out.println("1 legg til kontakt");
+			System.out.println("2 se på kontakter");
+			imputUser = sc.nextLine();
+			
+			if(imputUser.equals("1")) {
+				imputKontaktListe.clear();
+				imputKontaktListe.add(kontaktNr);
+				System.out.println("Fornavn");
+				imputUser = sc.nextLine();
+				imputKontaktListe.add(imputUser);
+				
+				System.out.println("Etternavn");
+				imputUser = sc.nextLine();
+				imputKontaktListe.add(imputUser);
+				
+				System.out.println("Tlf");
+				imputUser = sc.nextLine();
+				
+				Kontakt hi = new Kontakt(imputKontaktListe.get(1),imputKontaktListe.get(2),imputKontaktListe.get(3));
+				
+				
+				
+				
+				/*
+				imputKontaktListe.add(imputUser);
+				String jalla = imputKontaktListe.get(0);
+				Kontakt jalla = new Kontakt(imputKontaktListe.get(1),imputKontaktListe.get(2),imputKontaktListe.get(3));
+				*/
+				System.out.println(imputKontaktListe.get(0));
+				Integer kontaktNrMidlertidig = Integer.valueOf(kontaktNr) +1;
+				kontaktNr = kontaktNrMidlertidig.toString();
+				System.out.println(kontaktNr);
+				
+				
+				// print fuksjon drit for å se om det fungerer
+				
+				System.out.println(hi.navn + hi.etternavn);
+				
+				// slutt av drit for å se om det fungere
+				}
+				
+			}
+			
+		}
+		
+		
+		//legg til my kontakt
+		
+		
+		/*System.out.println("legg til kontakt");
+		Kontakt johnny = new Kontakt("johnny", "bakaas", "90732947");
+		System.out.println(johnny.getTlf());
+		
+		*/
+		
+	}

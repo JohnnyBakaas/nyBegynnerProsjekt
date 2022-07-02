@@ -1,0 +1,11 @@
+INDEX VERSION 1.131+C:\Personlige prosjekt\Programerings prosjekt\Excel liste sammenligner\Programering filer\.metadata\.plugins\org.eclipse.jdt.core
+741213971.index
+1576028178.index
+454003803.index
+1865797976.index
+1689307582.index
+3371521213.index
+2617301672.index
+262479519.index
+1158172218.index
+2939685466.index

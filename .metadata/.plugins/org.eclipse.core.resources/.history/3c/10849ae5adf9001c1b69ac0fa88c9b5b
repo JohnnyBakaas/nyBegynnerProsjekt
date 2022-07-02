@@ -1,0 +1,22 @@
+
+public class main {
+
+	public static void main(String[] args) {
+		
+		String[] liste = {"apelsin", "ape", "apekatt"};
+		boolean loopOn = true;
+		System.out.println(liste[0].substring(0,1));
+		int minsteOrd = 0;
+		for (int i=0; i < liste.length; i++) {
+			if (minsteOrd == 0) {
+				minsteOrd = liste[i].length();
+			} else if (minsteOrd > liste[i].length()) {
+				minsteOrd = liste[i].length();
+			} else {
+				
+			}
+		}
+		System.out.println(minsteOrd);
+		
+	}
+}

@@ -1,0 +1,12 @@
+
+public class main {
+
+	public static void main(String[] args) {
+		
+		String[] liste = {"apelsin", "ape", "apekatt"};
+		boolean loopOn = true;
+		System.out.println(liste[0].substring(0,1));
+		
+		
+	}
+}

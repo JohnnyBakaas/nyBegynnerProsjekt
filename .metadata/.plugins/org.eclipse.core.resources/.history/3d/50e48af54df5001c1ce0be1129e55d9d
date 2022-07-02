@@ -1,0 +1,57 @@
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+public class Main {
+	
+	public static void main(String[] args) {
+		String kontaktNr = "1";
+		String imputUser = "0";
+		
+		// list for ny kontakt 
+		List<String> imputKontaktListe = new ArrayList<>();
+		
+		Scanner sc = new Scanner(System.in);
+		while(true) {
+			System.out.println("1 legg til kontakt");
+			System.out.println("2 se på kontakter");
+			imputUser = sc.nextLine();
+			
+			if(imputUser.equals("1")) {
+				imputKontaktListe.clear();
+				imputKontaktListe.add(kontaktNr);
+				System.out.println("Fornavn");
+				imputUser = sc.nextLine();
+				imputKontaktListe.add(imputUser);
+				
+				System.out.println("Etternavn");
+				imputUser = sc.nextLine();
+				imputKontaktListe.add(imputUser);
+				
+				System.out.println("Tlf");
+				imputUser = sc.nextLine();
+				
+				imputKontaktListe.add(imputUser);
+				String jalla = imputKontaktListe.get(0);
+				/*	jeg vet at dette ikke skal fungere siden vi kaller ett objekt for en variabel 
+					(Siden variabelen kan endre seg), men er det en måte å få ut en statisk verdi?
+					For hvis jeg har en statisk verdi burde det jo fungere.
+					Tenkte akkuratt på det at jeg prøver å bruke en string til å gi noe ett navn....
+					her har jeg tatt litt vann over hodet ser jeg ja
+				
+				*/
+				Kontakt jalla = new Kontakt(imputKontaktListe.get(1),imputKontaktListe.get(2),imputKontaktListe.get(3));
+				
+				System.out.println(imputKontaktListe.get(0));
+				Integer kontaktNrMidlertidig = Integer.valueOf(kontaktNr) +1;
+				kontaktNr = kontaktNrMidlertidig.toString();
+				System.out.println(kontaktNr);
+				System.out.println(Kontakt.class);
+				}
+				
+			}
+			
+		}
+		
+		
+	}

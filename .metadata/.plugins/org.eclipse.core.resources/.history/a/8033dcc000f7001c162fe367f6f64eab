@@ -1,0 +1,16 @@
+
+public class kunde {
+	String navn;
+	String personnummer;
+	String kontoNr;
+	double saldo;
+	
+	public void nyKunde(navn, personnummer, kontoNr, saldo) {
+		this.navn = navn;
+		this.personnummer = personnummer;
+		this.kontoNr = kontoNr;
+		this.saldo = saldo;
+		
+	}
+	
+}

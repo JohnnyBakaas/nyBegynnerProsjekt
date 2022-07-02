@@ -1,0 +1,14 @@
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class Main {
+	
+	public static void main(String[] args) {
+		System.out.println("legg til kontakt");
+		Kontakt johnny = new Kontakt("johnny", "bakaas", "90732947");
+		System.out.println(johnny.getTlf());
+		
+		
+		
+	}
+}

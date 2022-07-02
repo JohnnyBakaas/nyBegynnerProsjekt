@@ -1,0 +1,42 @@
+
+public class main {
+
+	public static void main(String[] args) {
+		
+		String[] str = {"ape", "apelsin", "apkatt"};
+		
+		boolean inneholder = true;
+		
+		int antallFellse = 0;
+		
+		
+		while (inneholder) {
+			
+			for (int i=0; i < str.length;i++) {
+				
+				for (int j=0; j < str.length; j++) {
+					
+					if (str[j].charAt(i) == str[0].charAt(i)) {
+						inneholder = true;
+						System.out.println("jau");
+						
+					} else {
+						System.out.println("break");
+						inneholder = false;
+						break;
+					}
+
+				}
+				antallFellse++;
+				if (inneholder = false) {
+					break;
+				}
+				
+				}
+			if (inneholder) {
+				break;
+			}
+		}
+		System.out.println(str[0].substring(0,antallFellse));
+	}
+}
